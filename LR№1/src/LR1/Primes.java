@@ -1,4 +1,4 @@
-package com.company;
+package LR1;
 
 // Определение простых чисел от 2 до 100
 public class Primes {

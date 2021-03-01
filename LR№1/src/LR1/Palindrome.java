@@ -1,4 +1,4 @@
-package com.company;
+package LR1;
 
 // Нахождение палиндромов
 public class Palindrome {
