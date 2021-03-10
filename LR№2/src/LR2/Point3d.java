@@ -2,17 +2,14 @@ package LR2;
 
 
 // Класс трехмерной точки
-public class Point3d {
+public class Point3d extends Point2d {
 
     // Координаты точки
-    private double xCoord;
-    private double yCoord;
     private double zCoord;
 
     // Конструктор
     public Point3d(double x, double y, double z) {
-        xCoord = x;
-        yCoord = y;
+        super(x, y);
         zCoord = z;
     }
 
@@ -21,29 +18,9 @@ public class Point3d {
         this(0.0, 0.0, 0.0);
     }
 
-    // Получение значения Х
-    public double getX() {
-        return xCoord;
-    }
-
-    // Получение значения Y
-    public double getY() {
-        return yCoord;
-    }
-
     // Получение значения Z
     public double getZ() {
         return zCoord;
-    }
-
-    // Установка значения Х
-    public void setX(double val) {
-        xCoord = val;
-    }
-
-    // Установка значения Y
-    public void setY(double val) {
-        yCoord = val;
     }
 
     // Установка значения Z

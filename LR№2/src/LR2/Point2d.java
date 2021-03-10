@@ -1,8 +1,8 @@
 package LR2;
 
 public class Point2d {
-    private double xCoord;
-    private double yCoord;
+    protected double xCoord;
+    protected double yCoord;
 
     public Point2d(double x, double y) {
         xCoord = x;
