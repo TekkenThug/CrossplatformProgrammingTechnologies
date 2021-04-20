@@ -144,6 +144,19 @@ public class Task6 {
         return num1!=0? new int[]{num1,num2}:new int[]{};
     }
 
+    /* Задача №5 */
+    public static int[] isExact(int f, int m, int n) {
+        if (f < n)
+            return isExact(f*(m+1), m+1, n);
+        return new int[] {f, m};
+    }
+
+    public static int[] isExact(int n) {
+        int[] res = isExact(1, 1, n);
+        if (res[0] == n) return res;
+        return new int[] {};
+    }
+
     /* Задача №6 */
     public static String fractions(String frac) {
         int startBracket = frac.indexOf('(');
